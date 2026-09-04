@@ -8,3 +8,5 @@ A simple Node.js REST API built for Git learning and practice.
 - Task management
 - REST API
 - Git/GitHub practice
+
+# This project is used for Git learning.
