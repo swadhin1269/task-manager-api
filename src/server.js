@@ -17,6 +17,12 @@ app.get("/health", (req, res) => {
   });
 });
 
+app.get("/api", (req, res) => {
+  res.json({
+    status: "User Fetched"
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on port: http://localhost:${PORT}/`);
 });
