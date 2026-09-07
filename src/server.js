@@ -1,7 +1,7 @@
 const express = require("express");
 
 const app = express();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
@@ -14,6 +14,12 @@ app.get("/", (req, res) => {
 app.get("/health", (req, res) => {
   res.json({
     status: "OK"
+  });
+});
+
+app.get("/api", (req, res) => {
+  res.json({
+    status: "User Fetched"
   });
 });
 
